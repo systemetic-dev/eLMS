@@ -152,3 +152,10 @@ db.sqlite3
 # React
 node_modules/
 dist/
+
+
+
+# .venv
+.venv/
+venv/
+env/
