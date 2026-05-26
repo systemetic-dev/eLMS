@@ -1,10 +1,52 @@
+@import "tailwindcss";
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+html,
 body{
+  width: 100%;
+  overflow-x: hidden;
   font-family: sans-serif;
   background-color: #f9fafb;
+}
+
+/* =====================================================
+   LENIS
+===================================================== */
+
+html.lenis{
+  height: auto;
+}
+
+.lenis.lenis-smooth{
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth body{
+  overflow-x: hidden;
+}
+
+.lenis.lenis-stopped{
+  overflow: hidden;
+}
+
+/* =====================================================
+   HIDE SCROLLBAR
+===================================================== */
+
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
+
+.scrollbar-hide{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
